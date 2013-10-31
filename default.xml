@@ -4,9 +4,8 @@
   <remote  name="aibihpma"
            fetch="https://github.com/aibihpma/" />
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/"
-           review="https://android-review.googlesource.com/" />
-  <default revision="kitkat-dev"
+           fetch="https://android.googlesource.com/" />
+  <default revision="refs/tags/android-4.4_r1"
            remote="aosp"
            sync-j="4" />
 
