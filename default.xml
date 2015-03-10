@@ -25,6 +25,10 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform_development" remote="aibihpma" />
+  <project path="device/amphibia/common" name="device_amphibia_common" groups="device,amphibia" remote="aibihpma" />
+  <project path="device/amphibia/tiktaalik" name="device_amphibia_tiktaalik" groups="device,amphibia" remote="aibihpma" />
+  <project path="device/amphibia/tiktaalik_mips" name="device_amphibia_tiktaalik_mips" groups="device,amphibia" remote="aibihpma" />
+  <project path="device/amphibia/tiktaalik_x86" name="device_amphibia_tiktaalik_x86" groups="device,amphibia" remote="aibihpma" />
   <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
   <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
   <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
