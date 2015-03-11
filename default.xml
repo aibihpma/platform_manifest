@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="aibihpma"
+           fetch="https://github.com/aibihpma/" />
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="lollipop-dev"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk,tradefed" >
+  <project path="build" name="platform_build" groups="pdk,tradefed" remote="aibihpma" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -22,7 +24,11 @@
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="platform/development" groups="pdk-cw-fs" />
+  <project path="development" name="platform_development" groups="pdk-cw-fs" remote="aibihpma" />
+  <project path="device/amphibia/common" name="device_amphibia_common" groups="device,amphibia" remote="aibihpma" />
+  <project path="device/amphibia/tiktaalik" name="device_amphibia_tiktaalik" groups="device,amphibia" remote="aibihpma" />
+  <project path="device/amphibia/tiktaalik_mips" name="device_amphibia_tiktaalik_mips" groups="device,amphibia" remote="aibihpma" />
+  <project path="device/amphibia/tiktaalik_x86" name="device_amphibia_tiktaalik_x86" groups="device,amphibia" remote="aibihpma" />
   <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
   <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
   <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" clone-depth="1" />
@@ -221,7 +227,7 @@
   <project path="external/naver-fonts" name="platform/external/naver-fonts" groups="pdk-cw-fs" />
   <project path="external/netcat" name="platform/external/netcat" groups="pdk-cw-fs" />
   <project path="external/netperf" name="platform/external/netperf" groups="pdk-cw-fs" />
-  <project path="external/neven" name="platform/external/neven" groups="pdk-cw-fs" />
+  <project path="external/neven" name="platform_external_neven" groups="pdk-cw-fs" remote="aibihpma" />
   <project path="external/nfacct" name="platform/external/nfacct" groups="pdk-cw-fs" />
   <project path="external/nist-pkits" name="platform/external/nist-pkits" groups="pdk-cw-fs" />
   <project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk-cw-fs" />
@@ -280,7 +286,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs" remote="aibihpma" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
